@@ -15,6 +15,7 @@ const TripForm = () => {
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);
     const departureParam = params.get("departure");
+    const returnParam = params.get("return");
 
     if (departureParam) {
       const date = new Date(departureParam);
@@ -27,6 +28,25 @@ const TripForm = () => {
           departureDate: errorMessage,
         }));
       }
+    }
+
+    // Set the trip type to "two-way" if a return date is present in the URL
+    if (returnParam) {
+      const returnDateValue = new Date(returnParam);
+      setReturnDate(returnDateValue);
+
+      // Validate the return date against the departure date
+      if (departureDate) {
+        const returnError = validateReturnDate(departureDate, returnDateValue);
+        if (returnError) {
+          setErrors((prevErrors) => ({
+            ...prevErrors,
+            returnDate: returnError,
+          }));
+        }
+      }
+
+      setTripType("two-way");
     }
   }, []);
 
