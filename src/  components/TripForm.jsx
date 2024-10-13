@@ -30,12 +30,10 @@ const TripForm = () => {
       }
     }
 
-    // Set the trip type to "two-way" if a return date is present in the URL
     if (returnParam) {
       const returnDateValue = new Date(returnParam);
       setReturnDate(returnDateValue);
 
-      // Validate the return date against the departure date
       if (departureDate) {
         const returnError = validateReturnDate(departureDate, returnDateValue);
         if (returnError) {
