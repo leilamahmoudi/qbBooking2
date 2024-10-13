@@ -30,22 +30,24 @@ QbBooking2 is a booking web application built using React.js and Tailwind CSS. U
 
 1. Clone the repository:
 
-   ```bash
-   git clone https://github.com/your-username/qbBooking2.git
-   cd qbBooking2
-   ```
+```bash
+git clone https://github.com/your-username/qbBooking2.git
+cd qbBooking2
+```
 
-2.Install dependencies and start the application:
+2. Install dependencies and start the application:
 
 ```bash
 npm install
 ```
 
-3.Running Tests:
+3. Running Tests:
 
 ```bash
 npm test
 ```
+
+### Project Structure
 
 ```bash
 qbBooking2/
