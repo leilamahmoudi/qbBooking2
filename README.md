@@ -16,3 +16,13 @@ QbBooking2 is a booking web application built using React.js and Tailwind CSS. U
 ## Project Structure
 
 The main files and their purposes are:
+qbBooking2/
+│
+├── public/                # Public files
+├── src/                   # Source files
+│   ├── components/        # React components
+│   ├── utils/             # Utility functions (validation)
+│   └── tests/             # Unit tests
+├── package.json           # Project configuration and dependencies
+└── README.md              # Project documentation
+
