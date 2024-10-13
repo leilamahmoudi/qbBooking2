@@ -13,6 +13,48 @@ QbBooking2 is a booking web application built using React.js and Tailwind CSS. U
 - Responsive design using **Tailwind CSS**.
 - Unit tests written with **Jest** and **React Testing Library**.
 
-## Project Structure
+## Technologies
 
-The main files and their purposes are:
+- **React.js** - JavaScript library for building user interfaces.
+- **Tailwind CSS** - Utility-first CSS framework.
+- **Jest** - JavaScript testing framework.
+- **React Testing Library** - Tool for testing React components.
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js (v14 or higher) and npm/yarn installed on your machine.
+
+### Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/your-username/qbBooking2.git
+   cd qbBooking2
+   ```
+
+2.Install dependencies and start the application:
+
+```bash
+npm install
+```
+
+3.Running Tests:
+
+```bash
+npm test
+```
+
+```bash
+qbBooking2/
+│
+├── public/                # Public files
+├── src/                   # Source files
+│   ├── components/        # React components
+│   ├── utils/             # Utility functions (validation)
+│   └── tests/             # Unit tests
+├── package.json           # Project configuration and dependencies
+└── README.md              # Project documentation
+```
